@@ -12,7 +12,8 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
-import org.w3c.dom.events.MouseEvent;
+import java.awt.event.MouseEvent;
+
 
 /**
  *
@@ -266,7 +267,7 @@ public class ComponentResizer extends MouseAdapter{
 
 	/**
 	 */
-	@Override
+
 	public void mouseMoved(MouseEvent e)
 	{
 		Component source = e.getComponent();
