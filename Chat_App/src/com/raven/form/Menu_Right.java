@@ -8,12 +8,12 @@ package com.raven.form;
  *
  * @author chwimu rt
  */
-public class Menu_Left extends javax.swing.JPanel {
+public class Menu_Right extends javax.swing.JPanel {
 
     /**
      * Creates new form Menu_left
      */
-    public Menu_Left() {
+    public Menu_Right() {
         initComponents();
     }
 
@@ -30,7 +30,7 @@ public class Menu_Left extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(229, 229, 229));
 
-        jLabel1.setText("Menu Left Note");
+        jLabel1.setText("Menu Righ Note");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
