@@ -18,7 +18,7 @@ public class Menu_Left extends javax.swing.JPanel {
 
     private void ShowPeople() {
         for(int i=0;i<10;i++){
-            menuList.add(new Item_people(), "wrap");
+            menuList.add(new Item_people("People " + i), "wrap");
         }
     }    
     
