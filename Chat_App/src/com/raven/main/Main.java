@@ -1,8 +1,11 @@
-/*
+ /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.raven.main;
+import com.raven.swing.ComponentResizer;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
 /**
  *
@@ -15,6 +18,15 @@ public class Main extends javax.swing.JFrame {
      */
     public Main() {
         initComponents();
+        init();
+    }
+    
+    private void init() {
+        ComponentResizer com = new ComponentResizer();
+        com.registerComponent(this); 
+        com.setMinimumSize(new Dimension(800, 500));
+        com.setMaximumSize(Toolkit.getDefaultToolkit().getScreenSize());  
+        com.setSnapSize(new Dimension(10, 10));
     }
 
     /**
