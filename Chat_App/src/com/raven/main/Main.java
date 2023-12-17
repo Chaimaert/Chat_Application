@@ -45,6 +45,7 @@ public class Main extends javax.swing.JFrame {
         border = new javax.swing.JPanel();
         background = new javax.swing.JPanel();
         body = new javax.swing.JLayeredPane();
+        home1 = new com.raven.form.Home();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,7 +63,7 @@ public class Main extends javax.swing.JFrame {
         );
         backgroundLayout.setVerticalGroup(
             backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(body, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 443, Short.MAX_VALUE)
+            .addComponent(body, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
         javax.swing.GroupLayout borderLayout = new javax.swing.GroupLayout(border);
@@ -72,11 +73,16 @@ public class Main extends javax.swing.JFrame {
             .addGroup(borderLayout.createSequentialGroup()
                 .addGap(1, 1, 1)
                 .addComponent(background, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(787, Short.MAX_VALUE))
+                .addGap(146, 146, 146)
+                .addComponent(home1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(181, Short.MAX_VALUE))
         );
         borderLayout.setVerticalGroup(
             borderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(background, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(borderLayout.createSequentialGroup()
+                .addComponent(home1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -135,5 +141,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel background;
     private javax.swing.JLayeredPane body;
     private javax.swing.JPanel border;
+    private com.raven.form.Home home1;
     // End of variables declaration//GEN-END:variables
 }
