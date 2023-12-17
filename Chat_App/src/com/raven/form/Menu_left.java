@@ -12,12 +12,13 @@ public class Menu_Left extends javax.swing.JPanel {
     }
     
     private void init() {
-        menuList.setLayout(new MigLayout());
+        menuList.setLayout(new MigLayout("fillx", "0[]0", "1[]1" ));
         ShowPeople();
     }
 
     private void ShowPeople() {
-        for(int i=0;i<1;i++){
+        
+        for(int i=0; i<8; i++){
             menuList.add(new Item_people("People " + i), "wrap");
         }
     }    
