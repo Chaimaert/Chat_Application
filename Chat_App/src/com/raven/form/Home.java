@@ -10,7 +10,10 @@ public class Home extends javax.swing.JPanel {
     }
     
     private void init() {
-        setLayout(new MigLayout("fillx, filly", "0[]0",""));
+        setLayout(new MigLayout("fillx, filly", "0[]5[]5[]0",""));
+        this.add(new Menu_Left());
+        this.add(new Menu_Right());
+        this.add(new Chat());
     }
 
     /**
