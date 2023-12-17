@@ -27,6 +27,7 @@ public class Main extends javax.swing.JFrame {
         com.setMinimumSize(new Dimension(800, 500));
         com.setMaximumSize(Toolkit.getDefaultToolkit().getScreenSize());  
         com.setSnapSize(new Dimension(10, 10));
+        setIconImage(new ImageIcon(getClass().getResource("/com/raven/icon.png")).getImage());
     }
 
     /**
