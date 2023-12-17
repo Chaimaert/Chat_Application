@@ -27,10 +27,27 @@ public class Menu_Left extends javax.swing.JPanel {
     private void initComponents() {
 
         menu = new javax.swing.JLayeredPane();
+        menuButton2 = new com.raven.component.MenuButton();
+        menuButton1 = new com.raven.component.MenuButton();
 
         setBackground(new java.awt.Color(229, 229, 229));
 
         menu.setLayout(new javax.swing.BoxLayout(menu, javax.swing.BoxLayout.LINE_AXIS));
+
+        menuButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/message_selected.png"))); // NOI18N
+        menuButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuButton2ActionPerformed(evt);
+            }
+        });
+        menu.add(menuButton2);
+
+        menuButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuButton1ActionPerformed(evt);
+            }
+        });
+        menu.add(menuButton1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -46,8 +63,18 @@ public class Menu_Left extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void menuButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuButton1ActionPerformed
+
+    private void menuButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuButton2ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLayeredPane menu;
+    private com.raven.component.MenuButton menuButton1;
+    private com.raven.component.MenuButton menuButton2;
     // End of variables declaration//GEN-END:variables
 }
