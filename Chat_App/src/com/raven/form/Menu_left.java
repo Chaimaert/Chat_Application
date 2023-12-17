@@ -44,9 +44,9 @@ public class Menu_Left extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(86, 86, 86)
+                .addGap(50, 50, 50)
                 .addComponent(jLabel1)
-                .addContainerGap(411, Short.MAX_VALUE))
+                .addContainerGap(447, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

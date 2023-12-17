@@ -2,7 +2,7 @@
 package com.raven.form;
 import net.miginfocom.swing.MigLayout;
 
-public class Home extends javax.swing.JPanel {
+public class Home extends javax.swing.JLayeredPane   {
 
     public Home() {
         initComponents();
@@ -10,11 +10,10 @@ public class Home extends javax.swing.JPanel {
     }
     
     private void init() {
-        setLayout(new MigLayout("fillx, filly", "0[]5[]5[]0",""));
+        setLayout(new MigLayout("debug, fillx, filly", "0[200!]5[100%]5[200!]0",""));
         this.add(new Menu_Left());
         this.add(new Chat());  
-        this.add(new Menu_Right());
-        
+        this.add(new Menu_Right());   
     }
 
     /**
