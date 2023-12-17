@@ -1,5 +1,7 @@
 
 package com.raven.form;
+
+import com.raven.component.Item_people;
 import net.miginfocom.swing.MigLayout;
 
 public class Menu_Left extends javax.swing.JPanel {
@@ -11,8 +13,15 @@ public class Menu_Left extends javax.swing.JPanel {
     
     private void init() {
         menuList.setLayout(new MigLayout());
+        ShowPeople();
     }
 
+    private void ShowPeople() {
+        for(int i=0;i<10;i++){
+            menuList.add(new Item_people(), "wrap");
+        }
+    }    
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
