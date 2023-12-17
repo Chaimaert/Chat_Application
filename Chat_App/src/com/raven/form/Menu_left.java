@@ -33,6 +33,9 @@ public class Menu_Left extends javax.swing.JPanel {
         menuButton3 = new com.raven.component.MenuButton();
         menuList = new javax.swing.JLayeredPane();
 
+        menu.setBackground(new java.awt.Color(229, 229, 229));
+        menu.setOpaque(true);
+
         menuButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/group.png"))); // NOI18N
         menuButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
