@@ -3,11 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.raven.component;
+import javax.swing.JButton;
 
-/**
- *
- * @author chwimu rt
- */
-public class MenuButton {
+
+public class MenuButton extends JButton {
     
+    public MenuButton() {
+        setContentAreaFilled(false);
+    }
 }
